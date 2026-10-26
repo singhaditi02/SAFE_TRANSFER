@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>File Encryption Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>🔐 File Encryption Tool</h1>
+    <p class="sub">AES-256-GCM · password based</p>
+
+    <div class="tabs">
+      <button class="tab active" data-mode="encrypt">Encrypt</button>
+      <button class="tab" data-mode="decrypt">Decrypt</button>
+    </div>
+
+    <label class="drop" id="drop">
+      <input type="file" id="file" hidden>
+      <span id="fileName">Click or drop a file here</span>
+    </label>
+
+    <input type="password" id="password" placeholder="Password (min 8 characters)">
+    <button id="go">Encrypt file</button>
+    <p id="status" class="status"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
